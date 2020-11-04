@@ -58,7 +58,7 @@ footer {
 
 }
 #navigation ul li:first-child {
-  border-left: 2px solid #ADFF2E;
+  border-left: 1px solid #ADFF2E;
 }
 #navigation ul li:first-child a {
   color: white;
@@ -68,8 +68,16 @@ footer {
   color: #6F6F6F;
   font-size: 14px;
 }
-#navigation ul a i {
+#navigation ul a:hover {
+  color: white;
+}
+
+#navigation i {
+  color: #6F6F6F;
   font-size: 20px;
   vertical-align: middle;
   margin-right: 5px;
+}
+#navigation ul li:first-child i {
+  color: white;
 }
