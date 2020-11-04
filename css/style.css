@@ -5,6 +5,7 @@
 }
 
 body {
+  color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,13 +16,12 @@ body {
 }
 
 main {
-  height: calc(100% - 90px);
+  height: calc(100% - 80px);
   display: flex;
 }
 
 #nav-bar {
   width: 210px;
-
   background-color: black;
 }
 
@@ -32,8 +32,9 @@ main {
 }
 
 footer {
-  height: 90px;
+  height: 80px;
   background-color: #282828;
+  z-index: 5;
 }
 
 /* nav-bar layout */
@@ -63,10 +64,13 @@ footer {
 #navigation ul li:first-child a {
   color: white;
 }
+#navigation ul li:first-child i {
+  color: white;
+}
 #navigation ul a {
   text-decoration: none;
   color: #6F6F6F;
-  font-size: 14px;
+  font-size: 12px;
 }
 #navigation ul a:hover {
   color: white;
@@ -74,10 +78,98 @@ footer {
 
 #navigation i {
   color: #6F6F6F;
-  font-size: 20px;
+  font-size: 18px;
   vertical-align: middle;
   margin-right: 5px;
 }
-#navigation ul li:first-child i {
+
+#playlist{
+  padding: 20px;
+}
+#playlist h5 {
   color: white;
+  margin-bottom: 10px;
+}
+
+#crea-playlist {
+  display: flex;
+  align-items: center;
+}
+#crea-playlist > a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #6F6F6F;
+  font-size: 14px;
+  font-weight: bold;
+}
+#crea-playlist a:hover {
+  color: white;
+}
+
+
+#square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #6F6F6F;
+  font-size: 20px;
+}
+#square a {
+  color: black;
+}
+
+
+#nome-playlist {
+  height: 130px;
+  padding-top: 10px;
+  overflow: scroll;
+}
+#nome-playlist ul {
+ list-style: none;
+}
+#nome-playlist ul li {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #6F6F6F;
+  font-weight: bold;
+}
+#nome-playlist ul li:hover {
+  color: white;
+}
+
+#user {
+  position: fixed;
+  bottom: 80px;
+  left: 0;
+  width: 210px;
+  padding: 0 20px;
+  background-color: black;
+}
+
+#user-top {
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: #6F6F6F;
+  border-bottom: 1px solid #6F6F6F;
+}
+#user-top a {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #6F6F6F;
+}
+
+#user-bottom {
+  padding: 10px 0;
+}
+#user-bottom img {
+  height: 25px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+#user-bottom span {
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
 }
