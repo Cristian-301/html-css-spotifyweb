@@ -32,7 +32,7 @@ main {
   background-color: black;
 }
 
-#content {
+#content-window {
   width: calc(100% - 210px);
   background-color: #141922;
   overflow: scroll;
@@ -175,6 +175,9 @@ footer {
   text-decoration: none;
   color: #6F6F6F;
 }
+#user-top a:hover {
+  color: white;
+}
 
 #user-bottom {
   padding: 10px 0;
@@ -189,6 +192,38 @@ footer {
   font-size: 12px;
   font-weight: bold;
 }
+
+/* contenuto della pagina */
+#cta {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 210px);
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#cta a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 10px;
+  padding: 10px 40px;
+  font-size: 12px;
+}
+#cta a:hover {
+  transform: scale(1.1);
+}
+
+#content {
+  margin-top: 90px;
+  padding: 20px;
+}
+
+
 
 @media screen and (max-width: 767px) {
 
@@ -238,7 +273,8 @@ footer {
     border-radius: 50px;
   }
 
-  #content {
+  /* content-xs */
+  #content-window {
     width: calc(100% - 50px);
   }
 
