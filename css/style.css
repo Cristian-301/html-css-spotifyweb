@@ -12,16 +12,19 @@ body {
 #wrapper {
   width: 100%;
   height: 100vh;
-  background-color: salmon;
 }
 
 main {
   height: calc(100% - 80px);
   display: flex;
+  overflow: hidden;
 }
 
 #nav-bar {
   width: 210px;
+  height: 100%;
+  min-height: 400px;
+  overflow: hidden;
   background-color: black;
 }
 
@@ -34,17 +37,22 @@ main {
 footer {
   height: 80px;
   background-color: #282828;
-  z-index: 5;
 }
 
 /* nav-bar layout */
+#navbar-top{
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 75px);
+  overflow: hidden;
+}
+
 #logo {
   height: 40px;
   margin-top: 20px;
   margin-left: 20px;
 }
 #logo img {
-
   height: 100%;
 }
 
@@ -56,10 +64,10 @@ footer {
 }
 #navigation ul li {
   padding: 5px 20px;
-
 }
 #navigation ul li:first-child {
-  border-left: 1px solid #ADFF2E;
+  border-left: 2px solid #ADFF2E;
+  padding-left: 18px;
 }
 #navigation ul li:first-child a {
   color: white;
@@ -85,65 +93,69 @@ footer {
 
 #playlist{
   padding: 20px;
+  overflow: hidden;
 }
 #playlist h5 {
   color: white;
   margin-bottom: 10px;
 }
 
-#crea-playlist {
+/* #crea-playlist {
   display: flex;
   align-items: center;
-}
+} */
 #crea-playlist > a {
-  padding-left: 10px;
   text-decoration: none;
   color: #6F6F6F;
   font-size: 14px;
   font-weight: bold;
 }
+#crea-playlist > a:before {
+  display: inline-block;
+  margin-right: 10px;
+  content:"+";
+  height: 35px;
+  width: 35px;
+  color: black;
+  background-color: #6F6F6F;
+  text-align: center;
+  font-size: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+}
+#crea-playlist > a:hover:before {
+  background-color: white;
+}
 #crea-playlist a:hover {
   color: white;
 }
 
-
-#square {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35px;
-  height: 35px;
-  background-color: #6F6F6F;
-  font-size: 20px;
-}
-#square a {
-  color: black;
-}
-
-
 #nome-playlist {
-  height: 130px;
+  overflow: auto;
+  height: 90%;
   padding-top: 10px;
-  overflow: scroll;
+
 }
 #nome-playlist ul {
- list-style: none;
+  list-style: none;
 }
 #nome-playlist ul li {
   margin-top: 15px;
   font-size: 12px;
   color: #6F6F6F;
   font-weight: bold;
+
 }
 #nome-playlist ul li:hover {
   color: white;
 }
 
+#navbar-bottom {
+  height: 75px;
+  background-color: pink;
+}
 #user {
-  position: fixed;
-  bottom: 80px;
-  left: 0;
-  width: 210px;
+  height: 100%;
   padding: 0 20px;
   background-color: black;
 }
@@ -172,4 +184,8 @@ footer {
   padding-left: 10px;
   font-size: 12px;
   font-weight: bold;
+}
+
+@media screen and (max-wdith: 767px) {
+
 }
