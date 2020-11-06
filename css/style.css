@@ -325,10 +325,29 @@ footer {
 }
 
 /* seconda fascia di album */
+#creato-per-te {
+  padding: 30px 0;
+}
 #creato-per-te h3 {
   margin-top: 10px;
   font-size: 12px;
   color: #6F6F6F;
+}
+
+/* terza fascia di album */
+#artisti-popolari {
+  padding: 30px 0;
+}
+#artisti-popolari h3 {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #6F6F6F;
+}
+#artisti-popolari img {
+  border-radius: 100px;
+}
+#artisti-popolari .album-cover .overlay {
+  border-radius: 100px;
 }
 
 /* MD devices */
@@ -348,6 +367,10 @@ footer {
 
   .album-cover {
     width: calc(100% / 2);
+  }
+
+  #artisti-popolari img {
+    border-radius: 200px;
   }
 
 }
