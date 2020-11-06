@@ -267,14 +267,14 @@ footer {
   display: flex;
 }
 
-.recently-played {
+.album-cover {
   width: calc(100% / 6);
   padding: 5px;
 }
-.recently-played img {
+.album-cover img {
   width: 100%;
 }
-.recently-played a {
+.album-cover a {
   text-decoration: none;
 }
 
@@ -287,11 +287,7 @@ footer {
 }
 
 .image {
-  width: 100%;
   position: relative;
-}
-.image img {
-  width: 100%;
 }
 
 .overlay {
@@ -342,7 +338,7 @@ footer {
     flex-wrap: wrap;
   }
 
-  .recently-played {
+  .album-cover {
     width: calc(100% / 4);
   }
 
@@ -350,7 +346,7 @@ footer {
 /* MS devices */
 @media screen and (max-width: 991px) {
 
-  .recently-played {
+  .album-cover {
     width: calc(100% / 2);
   }
 
