@@ -4,13 +4,13 @@
   padding: 0;
 }
 
-#nav-bar-xs {
-  display: none;
-}
-
 body {
   color: white;
   font-family: 'Open Sans', sans-serif;
+}
+
+#nav-bar-xs {
+  display: none;
 }
 
 #wrapper {
@@ -24,6 +24,7 @@ main {
   overflow: hidden;
 }
 
+/* nav-bar layout */
 #nav-bar {
   width: 210px;
   height: 100%;
@@ -32,18 +33,6 @@ main {
   background-color: black;
 }
 
-#content-window {
-  width: calc(100% - 210px);
-  background-color: #141922;
-  overflow: scroll;
-}
-
-footer {
-  height: 80px;
-  background-color: #282828;
-}
-
-/* nav-bar layout */
 #navbar-top{
   display: flex;
   flex-direction: column;
@@ -87,7 +76,6 @@ footer {
 #navigation ul a:hover {
   color: white;
 }
-
 #navigation i {
   color: #6F6F6F;
   font-size: 18px;
@@ -131,10 +119,9 @@ footer {
 }
 
 #nome-playlist {
-  overflow: auto;
   height: 90%;
   padding-top: 10px;
-
+  overflow: auto;
 }
 #nome-playlist ul {
   list-style: none;
@@ -144,7 +131,6 @@ footer {
   font-size: 12px;
   color: #6F6F6F;
   font-weight: bold;
-
 }
 #nome-playlist ul li:hover {
   color: white;
@@ -191,6 +177,12 @@ footer {
 }
 
 /* contenuto della pagina */
+#content-window {
+  width: calc(100% - 210px);
+  background-color: #141922;
+  overflow: scroll;
+}
+
 #cta {
   display: flex;
   flex-direction: row-reverse;
@@ -251,19 +243,12 @@ footer {
   color: white;
 }
 
-/* prima fascia di album */
-#recently-played-items {
-  padding: 30px 0;
-}
-#recently-played-items h2 {
-  padding-left: 5px;
-}
 
+/* classi comuni in tutte le fasce album */
 .album-container {
   margin-top: 20px;
   display: flex;
 }
-
 .album-cover {
   width: calc(100% / 6);
   padding: 5px;
@@ -273,14 +258,6 @@ footer {
 }
 .album-cover a {
   text-decoration: none;
-}
-
-#albums {
-  display: flex;
-  flex-wrap: wrap;
-}
-#albums img {
-  width: 50%;
 }
 
 .image {
@@ -321,6 +298,23 @@ footer {
   color: #6F6F6F;
 }
 
+/* prima fascia di album */
+#recently-played-items {
+  padding: 30px 0;
+}
+#recently-played-items h2 {
+  padding-left: 5px;
+}
+
+#albums {
+  display: flex;
+  flex-wrap: wrap;
+}
+#albums img {
+  width: 50%;
+}
+
+
 /* seconda fascia di album */
 #creato-per-te {
   padding: 30px 0;
@@ -349,13 +343,18 @@ footer {
   color: #6F6F6F;
 }
 #artisti-popolari img {
-  border-radius: 100px;
+  border-radius: 50%;
 }
 #artisti-popolari .album-cover .overlay {
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 /* footer - media controls */
+footer {
+  height: 80px;
+  background-color: #282828;
+}
+
 #media-controls {
   display: flex;
   justify-content: space-between;
@@ -475,7 +474,6 @@ footer {
   display: flex;
   align-items: center;
   width: 210px;
-  /* height: 100%; */
 }
 #player-audio i {
   padding: 0 7px;
@@ -538,10 +536,6 @@ footer {
     width: calc(100% / 2);
   }
 
-  #artisti-popolari img {
-    border-radius: 200px;
-  }
-
   #song-data {
     width: 180px;
   }
@@ -555,7 +549,6 @@ footer {
   }
 
 }
-
 /* XS devices */
 @media screen and (max-width: 767px) {
 
@@ -614,6 +607,7 @@ footer {
     width: calc(100% - 50px);
   }
 
+/* footer */
   #volume-bar {
     width: 40%;
   }
